@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - SRNE İnşaat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="top-bar desktop-header">
+        <div class="logo-container">
+            <span class="logo-text">SRNE İnşaat ve Dekorasyon</span>
+        </div>
+        <div class="info-container">
+            <div class="info-block">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <strong>Telefon</strong><br>0538 688 87 86
+                </div>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong>Mail</strong><br>srneinsaat@gmail.com
+                </div>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <strong>Çalışma Saatleri</strong><br>Pzt - Cuma : 08:00 - 17:00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-logo">SRNE İnşaat ve Dekorasyon
+
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="projeler.html">Projeler</a>
+        <a href="iletisim-ve-form.html">İletişim</a>
+    </nav>
+
+    <div class="page-header">
+        <h1>Hizmetler</h1>
+    </div>
+
+    <div class="services">
+        <div class="service-item">
+            <img src="boya.jpg" alt="Boya Badana">
+            <h3>Boya / Badana</h3>
+            <p>Kaliteli iç ve dış cephe boyama hizmetleri sunuyoruz.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail1" class="detail-text">Boyama öncesi zemin hazırlığı, uygun astar ve boya seçimi ile uzun
+                ömürlü uygulamalar sağlanır.</div>
+        </div>
+        <div class="service-item">
+            <img src="fayans.jpg" alt="Fayans Seramik">
+            <h3>Fayans Seramik</h3>
+            <p>Zemin ve duvarlar için şık seramik çözümleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail6" class="detail-text">Banyo, mutfak gibi alanlara estetik kazandıran, hijyenik ve dayanıklı
+                seramik kaplamalar sunarız.</div>
+        </div>
+        <div class="service-item">
+            <img src="kara.jpg" alt="Kara Sıva">
+            <h3>Kara Sıva</h3>
+            <p>Duvarlarınız için dayanıklı sıva işlemleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail2" class="detail-text">Yüzeyin düzgün hale gelmesi için ilk kat olarak uygulanan dayanıklı
+                sıva işlemidir.</div>
+        </div>
+        <div class="service-item">
+            <img src="tesisat.jpg" alt="Su Tesisatı">
+            <h3>Su Tesisatı</h3>
+            <p>Ev ve iş yerleriniz için profesyonel tesisat çözümleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail10" class="detail-text">Temiz su ve atık su tesisatı kurulum, bakım ve onarım işlemleri uzman
+                ekiplerimiz tarafından yapılır.</div>
+        </div>
+        <div class="service-item">
+            <img src="alcipan.jpg" alt="Alçı Sıva">
+            <h3>Alçı Sıva</h3>
+            <p>Dekoratif ve düzgün yüzeyler için alçı uygulaması.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail3" class="detail-text">İç mekanlarda estetik ve düzgün yüzeyler için tercih edilen kolay
+                uygulanabilir bir sıva çeşididir.</div>
+        </div>
+        <div class="service-item">
+            <img src="piknikmasasi.jpg" alt=" masa">
+            <h3>Ahşap Piknik Masası</h3>
+            <p>Doğal ahşaptan üretilmiş, sağlam yapısı ve şık tasarımıyla bahçe ve açık alanlar için ideal
+                piknik masasıdır.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail23" class="detail-text">Doğal ahşaptan üretilmiş, sağlam yapısı ve şık tasarımıyla bahçe ve
+                açık alanlar için ideal
+                piknik masasıdır.</div>
+        </div>
+        <div class="service-item">
+            <img src="tamirat.jpg" alt="Tamirat ve Tadilat">
+            <h3>Tamirat & Tadilat</h3>
+            <p>Her türlü onarım ve yenileme işlemi.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail9" class="detail-text">Kapı, pencere, tesisat, zemin ve duvar onarımları dahil olmak üzere
+                her alanda tamirat hizmeti sunarız.</div>
+        </div>
+        <div class="service-item">
+            <img src="ahsapkamelya.jpg" alt="Kamelya">
+            <h3>Ahşap Kamelya</h3>
+            <p>Bahçenize şıklık ve gölge sağlayan estetik kamelya modelleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail24" class="detail-text">
+                Dayanıklı ahşap malzeme ile üretilmiş, oturma alanı ve masa içeren, uzun ömürlü kamelya kurulumu
+                yapılır.
+            </div>
+        </div>
+
+
+
+        <div class="service-item">
+            <img src="mutfakyenileme.jpg" alt="Mutfak Tadilatı">
+            <h3>Mutfak Tadilatı</h3>
+            <p>Modern ve işlevsel mutfaklar için yenileme.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail7" class="detail-text">Dolap değişimi, tezgah, lavabo, musluk ve zemin kaplama gibi
+                yeniliklerle mutfağınızı baştan yaratıyoruz.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="tvünit.jpg" alt="TV Ünitesi">
+            <h3>Televizyon Ünitesi</h3>
+            <p>Ev dekorasyonunuza uygun özel TV üniteleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail8" class="detail-text">TV alanınıza uygun ölçülerde, fonksiyonel ve dekoratif özel üretim TV
+                üniteleri tasarlanır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="kamelya.jpg" alt="Kamelya">
+            <h3>Bahçe Kulübesi</h3>
+            <p>Bahçeleriniz için estetik yapılar.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail4" class="detail-text">Dayanıklı, şık ve cam detaylı modern bahçe kulübesi. Depolama ya da
+                hobi alanı için ideal.</div>
+        </div>
+
+
+        <div class="service-item">
+            <img src="tesisat.jpg" alt="Su Tesisatı">
+            <h3>Su Tesisatı</h3>
+            <p>Ev ve iş yerleriniz için profesyonel tesisat çözümleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail10" class="detail-text">Temiz su ve atık su tesisatı kurulum, bakım ve onarım işlemleri uzman
+                ekiplerimiz tarafından yapılır.</div>
+        </div>
+        <div class="service-item">
+            <img src="panjuryeni.jpg" alt="Panjur">
+            <h3>Panjur</h3>
+            <p>Pencere ve kapılarınız için güvenlik ve estetik sağlayan panjur sistemleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail11" class="detail-text">Isı ve ses yalıtımı sağlayan manuel ve motorlu panjur seçenekleri
+                sunuyoruz.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="dograma.jpg" alt="Alüminyum Doğrama">
+            <h3>Alüminyum Doğrama</h3>
+            <p>Dayanıklı ve estetik alüminyum doğrama sistemleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail12" class="detail-text">Kapı, pencere ve cephe sistemlerinde modern çözümler sunan doğramalar
+                uygulanır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="bank.jpg" alt="Bank">
+            <h3>Bank</h3>
+            <p>Dış mekanlar için şık ve dayanıklı oturma alanları.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail13" class="detail-text">Ahşap ve metal seçenekleriyle bahçe, park ve kamusal alanlar için
+                bank üretimi.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="küpeste.jpg" alt="Küpeşte">
+            <h3>Küpeşte</h3>
+            <p>Merdiven ve balkonlar için güvenlik ve estetik sağlayan küpeşte sistemleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail14" class="detail-text">Paslanmaz, alüminyum ve cam küpeşte uygulamaları profesyonelce
+                yapılır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="marangozusta.jpg" alt="Marangoz Ustası">
+            <h3>Marangoz Ustası</h3>
+            <p>Mobilya üretimi ve onarımı için usta çözümler.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail15" class="detail-text">Özel ölçüye uygun masa, dolap, raf gibi tüm marangozluk işleriniz
+                titizlikle yapılır.</div>
+        </div>
+        <div class="service-item">
+            <img src="sifonyer.jpg" alt="Şifon Yer">
+            <h3>Şifon Yer</h3>
+            <p>Fonksiyonel ve dekoratif şifonyer tasarımları.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail16" class="detail-text">Yatak odası ve salonlar için tasarım ve ölçüye uygun şifonyer imalatı
+                yapılır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="celikapi.jpg" alt="Çelik Kapı">
+            <h3>Çelik Kapı</h3>
+            <p>Güvenliğiniz için yüksek dayanımlı çelik kapılar.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail17" class="detail-text">Yangına dayanıklı, hırsızlığa karşı güvenli çelik kapılar üretiyoruz.
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="cambalkon.jpg" alt="Cam Balkon">
+            <h3>Cam Balkon</h3>
+            <p>Manzaranızdan ödün vermeden koruma sağlayan cam balkon sistemleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail18" class="detail-text">Isı ve ses yalıtımı sağlayan, sürgülü cam balkon sistemleri montajı
+                yapılır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="cöpkova.jpg" alt="Ahşap Çöp Kovası">
+            <h3>Ahşap Çöp Kovası</h3>
+            <p>Doğal ve estetik ahşap çöp kovaları.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail19" class="detail-text">Bahçe ve parklar için özel üretim, dayanıklı ve çevreye uyumlu çöp
+                kovaları.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="sineklik.jpg" alt="Sineklik">
+            <h3>Sineklik</h3>
+            <p>Kapı ve pencereleriniz için sinek geçirmez çözümler.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail20" class="detail-text">Sabit, menteşeli veya sürgülü sineklik sistemleri ile konforlu yaşam
+                alanları sunuyoruz.</div>
+        </div>
+        <div class="service-item">
+            <img src="mutfakdolabi.jpg" alt="Mutfak Dolabı">
+            <h3>Mutfak Dolabı</h3>
+            <p>Estetik ve işlevsel özel tasarım mutfak dolapları.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail21" class="detail-text">Mutfaklarınız için ölçüye ve zevke özel, dayanıklı ve şık mutfak
+                dolapları üretimi yapılır.</div>
+        </div>
+
+        <div class="service-item">
+            <img src="dus.jpg" alt="Duşakabin">
+            <h3>Duşakabin</h3>
+            <p>Banyonuz için estetik ve fonksiyonel duşakabin çözümleri.</p>
+            <button class="detail-button">Detaylı Bilgi</button>
+            <div id="detail22" class="detail-text">Cam veya plastik panelli, sızdırmaz yapıya sahip modern duşakabin
+                sistemleri kurulumu yapılır.</div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SRNE İnşaat ve Dekorasyon | <a href="iletisim-ve-form.html">Bize Ulaşın</a></p>
+        <p style="margin-top: 20px; font-size: 16px;">
+            <i class="fa-solid fa-location-dot" style="color:#ccc; margin-right: 6px;"></i>
+            <strong>Konum:</strong> Sancaktepe / İstanbul
+        </p>
+    </footer>
+
+
+</body>
+
+</html>

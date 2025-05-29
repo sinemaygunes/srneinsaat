@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - SRNE İnşaat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="top-bar desktop-header">
+        <div class="logo-container">
+            <span class="logo-text">SRNE İnşaat ve Dekorasyon</span>
+        </div>
+        <div class="info-container">
+            <div class="info-block">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <strong>Telefon</strong><br>0538 688 87 86
+                </div>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <strong>Mail</strong><br>srneinsaat@gmail.com
+                </div>
+            </div>
+            <div class="info-block">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <strong>Çalışma Saatleri</strong><br>Pzt - Cuma : 08:00 - 17:00
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-logo">SRNE İnşaat ve Dekorasyon
+
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="hizmetler.html">Hizmetler</a>
+        <a href="projeler.html">Projeler</a>
+        <a href="iletisim-ve-form.html">İletişim</a>
+    </nav>
+
+    <div class="content">
+        <div class="page-header">
+            <h1>İletişim</h1>
+        </div>
+        <div class="mobile-info-box">
+            <div class="mobile-info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span><strong>Telefon:</strong> 0538 688 87 86</span>
+            </div>
+            <div class="mobile-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span><strong>Adres:</strong> Sancaktepe / İstanbul</span>
+            </div>
+            <div class="mobile-info-item">
+                <i class="fas fa-envelope"></i>
+                <span><strong>Mail:</strong> srneinsaat@gmail.com</span>
+            </div>
+        </div>
+
+
+        <div class="contact-wrapper"></div>
+        <!-- SIK SORULANLAR -->
+        <div class="contact-wrapper">
+
+            <!-- SIK SORULANLAR -->
+            <section class="faq-container">
+                <h2 class="faq-title">Sık Sorulanlar</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Hangi bölgelerde hizmet veriyorsunuz?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        İstanbul ve çevre illerde hizmet vermekteyiz.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Nasıl teklif alabilirim?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        İletişim formu üzerinden veya doğrudan arayarak teklif alabilirsiniz.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Hizmetlerinizin süresi ne kadar?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Proje kapsamına göre değişmekle birlikte ortalama 1-3 hafta sürmektedir.
+                    </div>
+                </div>
+            </section>
+
+            <div class="form-panel">
+                <!-- Bildirim önce geliyor -->
+                <div id="formMesaj" class="form-bildirim">Formunuz başarıyla gönderilmiştir.</div>
+
+                <!-- Başlık sonra -->
+                <div class="form-header">Bize Ulaşın!</div>
+
+                <!-- Form -->
+                <form id="iletisimForm" action="https://formspree.io/f/xnndknjw" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="adsoyad" placeholder="Ad Soyad" required>
+                    <input type="email" name="email" placeholder="E-posta" required>
+                    <textarea name="mesaj" rows="5" placeholder="Mesajınız" required></textarea>
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+
+
+        </div> <!-- /contact-wrapper -->
+    </div>
+
+
+
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SRNE İnşaat ve Dekorasyon | <a href="iletisim-ve-form.html">Bize Ulaşın</a></p>
+        <p style="margin-top: 20px; font-size: 16px;">
+            <i class="fa-solid fa-location-dot" style="color:#ccc; margin-right: 6px;"></i>
+            <strong>Konum:</strong> Sancaktepe / İstanbul
+        </p>
+    </footer>
+    <a href="https://wa.me/905386888786" class="whatsapp-button" target="_blank" aria-label="WhatsApp ile iletişim">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+</body>
+
+</html>
